@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Add a Map with Markers using HTML</title>
+        <style>
+            gmp-map {
+                height: 100%;
+            }
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
+        <script type="module" src="./index.js"></script>
+        <script
+            async
+            src="https://maps.googleapis.com/maps/api/js?loading=async&key=AIzaSyBgJIW95vuAp9uROcAwGA3IN2GL-7afZvM&libraries=maps,marker"></script>
+    </head>
+    <body>
+        <gmp-map
+            center="-3.1341692369043965, -59.97931627001754"
+            
+            zoom="13"
+            map-id="DEMO_MAP_ID">
+            <gmp-advanced-marker
+                position="-3.1341692369043965, -59.97931627001754"
+                title="Manaus, AM"></gmp-advanced-marker>
+        </gmp-map>
+    </body>
+</html>
